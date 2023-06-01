@@ -59,7 +59,8 @@ The script in Question3_2_Dejenie.py analyzes the presence of the let-7 family o
 
 The stacked bar plot provides a visual summary of the let-7 miRNA distribution across different species, highlighting the variations in presence and abundance of these miRNAs. From the plot, we can observe that no species has all 14 let-7 miRNAs. Each species has a unique combination of let-7 miRNAs. Some let-7 miRNAs are present only in a few species, indicating a species-specific distribution of these miRNAs. For example, let-7l miRNA is only present in the species with the code 'gga' (Gallus gallus), specifically let-7g-5p and let-7g-3p. Other let-7 miRNAs may be present in multiple species but with varying abundance.
 
-## Question3_2: Task: generate a plot to show which let miRNAs are present in each species.
+## Question3_3: Levenshtein Distance
+## What is the average levenshtein distance for the let-7 miRNAs for each species?
 
 The code in Question3_3_Dejenie.py calculates the average Levenshtein distance for the let-7 miRNA sequences within each species. It groups the sequences by species and calculates the pairwise Levenshtein distances among all pairs of sequences within that species. The code skips species codes that have only one sequence, ensuring that each species has at least two sequences before calculating the average Levenshtein distance. The output of the code includes the average Levenshtein distance and the frequency of let-7 miRNAs within each species.
 
