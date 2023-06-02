@@ -102,6 +102,14 @@ From 271 species miRNA sequences in mature.fa File, there are 116 species that h
 
 The script in Question5_2_AvLevDist_AllLet7_Plot_Dejenie.py file calculates the average Levenshtein distance for each miRNA family within the 'let-7' family. It reads sequences from a file and groups them based on their miRNA family code. It then calculates the average distance among all pairs of sequences within each family. The output displays the average Levenshtein distance for each miRNA family along with its corresponding frequency.
 
+The script also generates visualizations to represent the data. It includes a violin plot showing the distribution of average Levenshtein distances for each miRNA family. Additionally, a bar plot is created to compare the frequencies and average distances of the miRNA families within the 'let-7' family.
+
+
+![image](https://github.com/dejenie21/Take-Home-Exam/assets/87564675/e3dc21d1-0a6d-444f-bb85-0649418ae098)
+
+
+![image](https://github.com/dejenie21/Take-Home-Exam/assets/87564675/f3c4152a-e051-4909-a647-51b992c5b3b1)
+
 
 ## Conclusion 
 
