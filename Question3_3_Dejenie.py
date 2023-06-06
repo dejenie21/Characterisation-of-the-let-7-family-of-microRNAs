@@ -11,6 +11,7 @@ It groups the miRNA sequences by species code, calculates the average distance f
 '''
 
 import os
+import sys
 import Levenshtein
 
 def average_levenshtein_distance(file_path):
@@ -52,9 +53,20 @@ def average_levenshtein_distance(file_path):
 print("Note that 36 species that have only one miRNA sequence has not used in average Levenshtein distance calculation.")
 print("The following output is the average Levenshtein distance for 80 species (80/116) containing more than two let-7 miRNA sequence:")
 
-# File path
-file_path = r"C:\Users\THIS-PC\eclipse-workspace2023\take_home_exam\mature.fa"
-average_levenshtein_distance(file_path)
+def main():
+    # File path
+    file_path = r"C:\Users\THIS-PC\eclipse-workspace2023\take_home_exam\mature.fa"
+    average_levenshtein_distance(file_path)
+
+    # Return an exit code of 0 to indicate successful execution
+    return 0
+
+if __name__ == '__main__':
+    sys.exit(main())
+
+#The modified code I provided includes the following changes:
+# I added a main function: The original code was directly calling the average_levenshtein_distance function at the top level. In the modified version, I encapsulated the main logic within a main function. This allows for better code organization and separation of concerns.
+# I added the sys.exit call: By adding sys.exit(main()) inside the if __name__ == '__main__' block, we ensure that the script exits with the appropriate exit code. This is a best practice for command-line scripts, as it provides a way to communicate the execution status to the calling process.
 
 '''
 
